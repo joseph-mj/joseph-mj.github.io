@@ -1,0 +1,785 @@
+@font-face {
+  font-family: "Averta";
+  src: url("fonts/averta-extrabold.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("fonts/averta-bold.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("fonts/averta-regular.otf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+:root {
+  --white: rgba(255, 255, 255, 0.5);
+  --color1: #FFF4CF;
+  --color1-a: rgba(245, 239, 218, 0.5);
+  --color2: #FF5035;
+  --color3: #201F26;
+  --color4: #FFE897;
+  --color5: #FFC731;
+  --color6: #332F23;
+  --color7: #FFFAE6;
+  --div: #8b8b8b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Averta';
+  font-weight: 100;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 5em;
+  color: var(--color3);
+}
+
+p {
+  font-size: 1.3em;
+  color: var(--color2);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+header .navbar .container {
+  -webkit-box-shadow: 0px 0px 36px 2px rgba(94, 90, 89, 0.1);
+          box-shadow: 0px 0px 36px 2px rgba(94, 90, 89, 0.1);
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 3em;
+}
+
+header .navbar .container a.logo {
+  color: var(--color2);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+header .navbar .container .menu {
+  display: none;
+}
+
+header .navbar .container nav ul {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .navbar .container nav ul li img {
+  max-width: 2.3em;
+  margin-left: 2em;
+}
+
+section.hero-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.hero-section .container .left-container {
+  margin: 10% 0 10% 10%;
+}
+
+section.hero-section .container .left-col {
+  background-color: var(--color1-a);
+  max-width: 50%;
+  padding: 5%;
+  border-radius: 2em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+section.hero-section .container .left-col h1 {
+  font-size: 6em;
+  line-height: 1.2em;
+}
+
+section.hero-section .container .left-col p {
+  margin-top: 1em;
+  padding-right: 20%;
+}
+
+section.hero-section .container .shape {
+  position: absolute;
+  z-index: -1;
+  top: 30%;
+  left: 40%;
+}
+
+section.hero-section .container .shape img {
+  width: 40vw;
+}
+
+section.skills-section .container {
+  background: var(--color4);
+}
+
+section.skills-section .container h1 {
+  padding: 1em 0 1.5em;
+  text-align: center;
+}
+
+section.skills-section .container ul {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 5em;
+}
+
+section.skills-section .container ul li {
+  background: var(--color7);
+  border-radius: 1em;
+  text-align: center;
+  padding: 0 0 2em 0;
+  width: 22%;
+  -webkit-box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, 0.1);
+}
+
+section.skills-section .container ul li h2 {
+  font-weight: 200;
+  font-size: 2em;
+  margin: 2em auto;
+  line-height: 1.2em;
+}
+
+section.skills-section .container ul li p {
+  font-size: 1.3em;
+  padding: 0 3em;
+}
+
+section.tools-section .container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.tools-section .container h1 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+section.tools-section .container ul.all {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 40%;
+  max-width: 90%;
+}
+
+section.tools-section .container ul.all li.tool {
+  background-color: var(--color1-a);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  margin-bottom: 2em;
+  padding-right: 2em;
+}
+
+section.tools-section .container ul.all li.tool h2 {
+  font-size: 2em;
+  font-weight: 200;
+  margin: 1em 3em;
+}
+
+section.tools-section .container ul.all li.tool ul.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+section.tools-section .container ul.all li.tool ul.icons img {
+  width: 4em;
+  margin-right: 1em;
+}
+
+section.tools-section .container .bg-circles {
+  z-index: -1;
+  position: absolute;
+}
+
+section.tools-section .container .bg-circles img {
+  position: absolute;
+}
+
+section.tools-section .container .bg-circles .violet-circle {
+  width: 40vw;
+  top: 60vh;
+  right: 10vw;
+}
+
+section.tools-section .container .bg-circles .yellow-circle {
+  width: 7vw;
+  right: 18vw;
+  top: 15vw;
+}
+
+section.tools-section .container .bg-circles .orange-circle {
+  width: 18vw;
+  right: -30vw;
+  top: 18vw;
+}
+
+.work-section .container {
+  background-color: var(--color3);
+  padding: 5em 0 0 0;
+  height: 90vh;
+}
+
+.work-section .container h1 {
+  padding: 0 0 1.5em;
+  text-align: center;
+  color: var(--color5);
+}
+
+.work-section .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.work-section .container ul li img {
+  width: 60%;
+  border-radius: 1em;
+}
+
+.work-section .container ul li h4 {
+  font-size: 2em;
+  color: white;
+  margin: 1em 0;
+}
+
+.contact-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vh;
+  padding: 0 15%;
+}
+
+.contact-section .container h1 {
+  color: var(--color2);
+  font-size: 6em;
+}
+
+.contact-section .container p {
+  color: var(--color3);
+}
+
+@media only screen and (max-width: 1400px) {
+  p {
+    font-size: 1.1em;
+    font-weight: 100;
+  }
+  section.hero-section .container .left-col {
+    background-color: var(--color1-a);
+    border-radius: 2em;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    margin-top: 1em;
+    padding-right: 10%;
+  }
+  section.hero-section .container .left-col h1 {
+    font-size: 5em;
+    line-height: 1.2em;
+  }
+  section.hero-section .shape {
+    position: absolute;
+    z-index: -1;
+    top: 30%;
+    left: 40%;
+  }
+  section.hero-section .shape img {
+    width: 40vw;
+  }
+  section.skills-section .container {
+    background: var(--color4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.skills-section .container h1 {
+    padding: 1em 0 1.5em;
+    text-align: center;
+  }
+  section.skills-section .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    padding-bottom: 5em;
+  }
+  section.skills-section .container ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: var(--color7);
+    border-radius: 1em;
+    margin: 0;
+    padding: 5% 0;
+    width: 85%;
+    -webkit-box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3em;
+  }
+  section.skills-section .container ul li h2 {
+    font-weight: 200;
+    font-size: 2em;
+    margin: 0;
+    margin-right: 10%;
+    margin-left: 10%;
+    line-height: 1.2em;
+  }
+  section.skills-section .container ul li p {
+    text-align: left;
+    margin: 0 10% 0 0;
+    font-size: 1.3em;
+    padding: 0;
+  }
+  section.tools-section .container .bg-circles {
+    z-index: -1;
+    position: absolute;
+  }
+  section.tools-section .container .bg-circles img {
+    position: absolute;
+  }
+  section.tools-section .container .bg-circles .violet-circle {
+    width: 50vw;
+    top: 60vh;
+    right: 10vw;
+  }
+  section.tools-section .container .bg-circles .yellow-circle {
+    width: 7vw;
+    right: 30vw;
+    top: 25vw;
+  }
+  section.tools-section .container .bg-circles .orange-circle {
+    width: 25vw;
+    right: -40vw;
+    top: 30vw;
+  }
+  .work-section .container {
+    background-color: var(--color3);
+    padding: 5em 0 0 0;
+    height: 70vh;
+  }
+  .work-section .container h1 {
+    padding: 0 0 1.5em;
+    text-align: center;
+    color: var(--color5);
+  }
+  .work-section .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .work-section .container ul li img {
+    width: 70%;
+    border-radius: 1em;
+  }
+  .work-section .container ul li h4 {
+    font-size: 1.5em;
+    color: white;
+    margin: 1em 0;
+  }
+  .contact-section .container h1 {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 3em;
+  }
+  header .navbar .container {
+    padding: 1em 1.5em;
+  }
+  header .navbar .container a.logo {
+    color: var(--color2);
+    font-size: 2em;
+    margin-left: 0em;
+  }
+  header .navbar .container nav {
+    display: 0;
+  }
+  header .navbar .container nav ul {
+    display: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .navbar .container nav ul li img {
+    max-width: 2.3em;
+    margin-left: 2em;
+  }
+  section.hero-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20% 10%;
+  }
+  section.hero-section .container .left-container {
+    margin: 0;
+  }
+  section.hero-section .container .left-col {
+    background-color: var(--color1-a);
+    max-width: 100%;
+    padding: 10% 10%;
+    border-radius: 2em;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  section.hero-section .container .left-col h1 {
+    padding-bottom: 10%;
+    font-size: 4em;
+    line-height: 1.2em;
+  }
+  section.hero-section .container .left-col p {
+    margin-top: 0;
+    padding-right: 10%;
+  }
+  section.hero-section .container .shape {
+    position: absolute;
+    z-index: -1;
+    top: 60%;
+    left: auto;
+  }
+  section.hero-section .container .shape img {
+    width: 80vw;
+  }
+  section.skills-section .container {
+    background: var(--color4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.skills-section .container h1 {
+    padding: 10% 10%;
+    text-align: center;
+  }
+  section.skills-section .container ul {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  section.skills-section .container ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: var(--color7);
+    border-radius: 1em;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    -webkit-box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 2px 30px 2px rgba(0, 0, 0, 0.1);
+  }
+  section.skills-section .container ul li h2 {
+    font-weight: 200;
+    font-size: 2em;
+    margin: 0;
+    padding: 10% 0;
+    line-height: 1.2em;
+  }
+  section.skills-section .container ul li p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 15%;
+    padding: 0 0 10% 0;
+  }
+  section.tools-section .container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.tools-section .container h1 {
+    text-align: center;
+    margin: 1em 0;
+  }
+  section.tools-section .container ul.all {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 70%;
+  }
+  section.tools-section .container ul.all li.tool {
+    background-color: var(--color1-a);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1em;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    margin-bottom: 10%;
+    padding-right: 0;
+    padding: 10% 5%;
+  }
+  section.tools-section .container ul.all li.tool h2 {
+    font-size: 2em;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+  }
+  section.tools-section .container ul.all li.tool ul.icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10% 0 0;
+    padding: 0;
+    width: 80%;
+  }
+  section.tools-section .container ul.all li.tool ul.icons img {
+    width: 4em;
+    margin-right: 0;
+  }
+  section.tools-section .container .bg-circles {
+    z-index: -1;
+    position: absolute;
+  }
+  section.tools-section .container .bg-circles img {
+    position: absolute;
+  }
+  section.tools-section .container .bg-circles .violet-circle {
+    width: 100vw;
+    top: 30vh;
+    right: 10vw;
+  }
+  section.tools-section .container .bg-circles .yellow-circle {
+    width: 25vw;
+    right: 18vw;
+    top: -70vw;
+  }
+  section.tools-section .container .bg-circles .orange-circle {
+    width: 50vw;
+    right: -50vw;
+    top: 0vw;
+  }
+  .work-section .container {
+    background-color: var(--color3);
+    padding: 10% 0;
+    height: 100%;
+  }
+  .work-section .container h1 {
+    padding: 0 0 10%;
+    text-align: center;
+    color: var(--color5);
+  }
+  .work-section .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .work-section .container ul li {
+    margin-bottom: 5%;
+  }
+  .work-section .container ul li img {
+    width: 70%;
+    border-radius: 1em;
+  }
+  .work-section .container ul li h4 {
+    font-size: 1.2em;
+    color: white;
+    margin: 1em 0;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    padding: 10% 0;
+  }
+  .contact-section .container h1 {
+    color: var(--color2);
+    font-size: 3em;
+    margin-bottom: 20%;
+  }
+  .contact-section .container p {
+    font-size: 1em;
+    text-align: center;
+    color: var(--color3);
+  }
+}
+/*# sourceMappingURL=main.css.map */
