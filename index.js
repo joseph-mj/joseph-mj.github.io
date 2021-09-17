@@ -1,1 +1,1 @@
-// alert("I've given up for now");
+alert("Site still in progress");
