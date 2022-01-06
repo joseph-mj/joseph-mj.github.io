@@ -1,4 +1,4 @@
-# joseph-mj.github.io
+# thekaradi.github.io
 
 First ever code I've done, for my portfolio site.
 
